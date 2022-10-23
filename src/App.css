@@ -1,38 +1,138 @@
-.App {
-  text-align: center;
+.container-principal{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 75px;
+  /* padding: 0 100px 20px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container-principal img{
+  width: 60%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  z-index: -1;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.div-wrapper{
+  display: grid;
+  /* background-color: antiquewhite; */
+  position: absolute;
+  width: 60%;
+  height: 85px;
+  margin-top: 25px;
+  /* padding: 0px 450px 0px 450px; */
+  
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  z-index: 1;
+}
+
+.div-wrapper-r-sol-1 {
+  background-color: aqua;
+  grid-column: 1;
+  grid-row: 1;
+  margin-left: 100px;
+}
+
+.div-wrapper-r-sol-2 {
+  background-color: aqua;
+  grid-column: 2;
+  grid-row: 1;
+  margin-right: 100px;
+}
+
+.div-wrapper-r-sol-3 {
+  background-color: aqua;
+  grid-column: 3;
+  grid-row: 1;
+  margin-right: 100px;
+}
+
+.div-wrapper-r-sol-4 {
+  background-color: aqua;
+  grid-column: 4;
+  grid-row: 1;
+  margin-right: 100px;
+}
+
+@media screen and (max-width: 500px){
+  .container-principal img{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+  }
+
+  .div-wrapper{
+    display: grid;
+    /* background-color: antiquewhite; */
+    position: absolute;
+    width: 100%;
+    height: 85px;
+    margin-top: 25px;
+    /* padding: 0px 450px 0px 450px; */
+    
+    grid-template-columns: repeat(4, 1fr);
+    gap: 160px;
+    z-index: 1;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.container-principal .select-item{
+  width: 350px;
+  height: 40px;
+  padding: 0;
+  
+}
+
+.select-item-0-0{
+  visibility: hidden;
+}
+
+.select-item-0{
+  background-color: black;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.select-item-1{
+  background-color: brown;
+  color: white;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.select-item-2{
+  background-color: red;
+  color: white;
+}
+.select-item-3{
+  background-color: orange;
+  color: white;
+}
+.select-item-4{
+  background-color: yellow;
+  color: black;
+}
+.select-item-5{
+  background-color: green;
+  color: white;
+}
+.select-item-6{
+  background-color: blue;
+  color: white;
+}
+.select-item-7{
+  background-color: purple;
+  color: white;
+}
+.select-item-8{
+  background-color: grey;
+  color: white;
+}
+.select-item-9{
+  background-color: white;
+  color: black;
 }
