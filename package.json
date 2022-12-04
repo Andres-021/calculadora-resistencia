@@ -2,7 +2,7 @@
   "name": "calculadora-resistencia",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Andres-021.github.com/calculadora-resistencia/build",
+  "homepage": "https://Andres-021.github.io/calculadora-resistencia/build",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
