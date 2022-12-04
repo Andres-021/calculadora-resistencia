@@ -46,7 +46,7 @@ function App() {
       listMult.forEach((element, i) => {
         if(Number(multi) === i){
           solT = Number(concat)*element;
-          setInputValue(solT)
+          setInputValue(solT);
         }
       });
     }
